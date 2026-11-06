@@ -1,0 +1,29 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+#
+# OpenCRVS is also distributed under the terms of the Civil Registration
+# & Healthcare Disclaimer located at http://opencrvs.org/license.
+#
+# Copyright (C) The OpenCRVS Authors located at https://github.com/opencrvs/opencrvs-core/blob/master/AUTHORS.
+
+[package]
+name = "opencrvs-desktop"
+version = "2.2.0"
+description = "Proof of concept: the OpenCRVS client as a desktop app"
+license = "MPL-2.0"
+edition = "2021"
+rust-version = "1.80"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+# Only plain HTTP to 127.0.0.1, so no TLS and no compression.
+ureq = { version = "2", default-features = false }
+getrandom = "0.2"
+
+[profile.release]
+strip = true
+lto = true
