@@ -82,7 +82,14 @@
     "packages/mosip-api/certs",
     "packages/mosip-mock/src/mock-only-private-key.pem",
     "packages/esignet-mock/src/dev-secrets",
-    "packages/esignet-mock/src/mock-authorizer/index.html"
+    "packages/esignet-mock/src/mock-authorizer/index.html",
+    "packages/desktop/backend/dist",
+    "packages/desktop/src-tauri/target",
+    "packages/desktop/src-tauri/gen",
+    "packages/desktop/src-tauri/binaries",
+    "packages/desktop/src-tauri/icons",
+    "packages/desktop/src-tauri/placeholder",
+    "packages/desktop/.data"
   ],
   "license": "license-header.txt",
   "licenseFormats": {
@@ -95,7 +102,7 @@
       "prepend": "<!--",
       "append": "-->"
     },
-    "ts|tsx|js|mjs|css": {
+    "ts|tsx|js|mjs|css|rs": {
       "prepend": "/*",
       "append": " */",
       "eachLine": {

@@ -1,0 +1,5 @@
+backend/dist
+src-tauri/target
+src-tauri/gen
+src-tauri/binaries
+.data
